@@ -1,76 +1,571 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <title>Firefox os by yashthakkar</title>
-  </head>
+<!doctype html>
+<html lang="en">
 
-  <body>
-    <div id="container">
-      <div class="inner">
+    <head>
+        <meta charset="utf-8">
 
-        <header>
-          <h1>Firefox os</h1>
-          <h2>Firefox OS presentation</h2>
-        </header>
+        <title>Firefox OS Presentation</title>
 
-        <section id="downloads" class="clearfix">
-          <a href="https://github.com/yashthakkar/firefox_os/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
-          <a href="https://github.com/yashthakkar/firefox_os/tarball/master" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
-          <a href="https://github.com/yashthakkar/firefox_os" id="view-on-github" class="button"><span>View on GitHub</span></a>
-        </section>
+        <meta name="description" content="Beginner's guide for starting development of open web apps!">
+        <meta name="author" content="Shafiul Azam Chowdhury">
 
-        <hr>
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-        <section id="main_content">
-          <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+        <link rel="stylesheet" href="css/reveal.min.css">
+        <link rel="stylesheet" href="css/theme/sky.css" id="theme">
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+        <!-- For syntax highlighting -->
+        <link rel="stylesheet" href="lib/css/zenburn.css">
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
+        <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+        <script src="files/fxos/fxos.js"></script>
+        <script>
+            document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+        </script>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+        <style type="text/css">
+            .noStyle{
+                border: 0;
+                box-shadow: none;    
+            }
+        </style>
 
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+        <!--[if lt IE 9]>
+        <script src="lib/js/html5shiv.js"></script>
+        <![endif]-->
+    </head>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+    <body>
 
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
+        <div class="reveal">
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+            <!-- Any section element inside of this container is displayed as a slide -->
+            <div class="slides">
+                <section>
+                    <br>
+                    <h4>
+                        Presentation
+                    </h4>
+                    <br>
+                    <p>
 
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+                        <img src="files/fxos/Q00mt.png" style="border: 0; box-shadow:none;">
+                        <img src="files/fxos/firefox-os-phone1.png" style="border: 0; box-shadow:none;" height="200">
+                    </p>
+                    <h4 align="right">Yash Thakkar</h4>
+                    <h5 align="right">ID : 201412079</h5>
+                    <p>
+                        <br>
+                    </p>
+                    <!--
+                    <p style="color:#CCCCCC; ">
+                        Use Left &amp; Right arrows for page navigation <br>
+                    </p>
+                    -->
+                </section>
+                <section>
+                    <h2>What is Firefox OS?</h2>
+                    <p align="center">
+                        <br>
+                    </p>
+                    <p align="center">Firefox OS is an open platform for mobile Devices, built entirely using HTML5 and other open Web standards which is free from the rules and restrictions of existing proprietary platforms.</p>
+                    </p>
+                </section>
+                <section>
+                    <h2>WHY USE HTML5?</h2>
+                    <p>
+                        <br>
+                    </p>
+                    <ul>
+                        <li>In-built distribution - the web</li>
+                        <li>Simple technologies used by lots of developers</li>
+                        <li>Evolution of existing practices</li>
+                        <li>Open, independent, standardized</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>1. Intro</h2>
+                    <p>
+                        <br>
+                    </p>
+                    <p>
+                        <li>A brand new OS for smart phones</li>
+                        <li>User-interface &amp; Apps are written with HTML, CSS &amp; JS</li>
+                    <p>
+                        <br>
+                    </p>
+                    <p>We're interested in building apps which runs in devices having <script type="text/javascript">printLogo();</script><br>
+                    </p>
+                    <p>
+                        <br>
+                    </p>
+                </section>
+                <section>
+                    <h2>It's already live!</h2>
+                    <p>
+                        <br>
+                    </p>
+                    <img src="files/fxos/firefox-os-phone-zte-630x420.jpg"> 
+                    <br>
+                </section>
+                <section>
+                    <h2>2. Organization</h2>
+                    <p>of <script type="text/javascript">printLogo();</script> Apps</p>
+                    <p>
+                        <br>
+                    </p>
+                    <p>To develop any application, we worry about two things...</p>
+                    <p>
+                        <br>
+                    </p>
+                    <p>(next slides)<br>
+                    </p>
+                </section>
+                <section>
+                    <h2>User Interface</h2>
+                    <img src="files/fxos/uBYpB.jpg">
+                    <br>Pages, Forms, Buttons, sliders...<br>
+                </section>
+                <section>
+                    <h2>&amp; Controls!</h2>
+                    <img src="files/fxos/gears.gif">
+                    <br>Logic programming, loops, working with data etc...<br>
+                </section>
+                <section>
+                    <h2>Organization</h2>
+                    <p>
+                        <br>
+                    </p>
+                    <p>While building <script type="text/javascript">printLogo();</script> apps, we</p>
+                    <p>
+                        <br>
+                    </p>
+                    <ul>
+                        <li>build user interface with <b>HTML</b> &amp; <b>CSS</b>
+                        </li>
+                        <li>&amp; <b>Javascript</b> does the programming!<br>
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Philosophy</h2>
+                    <p>
+                        <br>
+                    </p>
+                    <img align="left" src="files/fxos/dragon_thinking_small.gif"> So, <script type="text/javascript">printLogo();</script> apps are basically <b>Web Apps</b>!<br>
+                    <br>And since HTML/CSS/JavaScripts are standards, these apps run not only in <script type="text/javascript">printLogo();</script> devices, but on any device that have a browser!!! (Yes, on your Android too*)<br>
+                    <br>
+                    Don't misunderstand <i>web apps </i>- they run offline, too!<br>* Some APIs don't work in all browsers.<br>
+                </section>
+                <section>
+                    <h2>
+                        <br>
+                    </h2>
+                    <p>
+                        <br>
+                    </p>
+                    <h1>Let's Start!<br>
+                    </h1>
+                </section>
+                <section>
+                    <h2>3. Tools</h2>
+                    <p>
+                        <br>
+                    </p>
+                    <ul>
+                        <li>Any <b>text editor</b> <i>(to write code)</i>
+                            <br>
+                        </li>
+                        <li><a href="http://www.mozilla.org/en-US/firefox/new/">
+                                <b>Firefox browser 26.0+</b>
+                            </a> <i>(to see output!)</i>
+                        </li>
+                    </ul>
+                    <p>
+                        <br>
+                    </p>
+                    <p>Optionally (highly recommended):</p>
+                    <div>
+                        <ul>
+                            <li>
+                                <a href="https://developer.mozilla.org/en-US/Firefox_OS/Using_the_App_Manager"><script type="text/javascript">printLogo();</script> Simulator</a>
+                                <br>
+                            </li>
+                            <li>
+                                <a href="https://getfirebug.com/">Firebug</a> <i>(for debugging)</i>
+                                <br>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section>
+                    <h2>Text Editor</h2>
+                    <p>
+                        <br>
+                    </p>
+                    <p>Any text editor will work. We'll be making following types of files:</p>
+                    <ul>
+                        <li>HTML (.html)</li>
+                        <li>JavaScript (.js)<br>
+                        </li>
+                        <li>CSS (.css)</li>
+                    </ul>
+                    <p>
+                        <br>
+                    </p>
+                    <p>You can use <a href="http://www.sublimetext.com/">Sublime</a>, Notepad++, Netbeans, Eclipse or even the basic editor which comes with your OS.<br>
+                    </p>
+                </section>
+                <section>
+                    <h2>Firefox Browser</h2>
+                    <p>
+                        <br>
+                    </p>
+                    <p>To see the complete functionality of your app, we'll use Firefox Browser - the desktop browser we all love.</p>
+                    <p>
+                        <br>
+                    </p>
+                    <p>We'll open the HTML files with our browser.<br>
+                    </p>
+                </section>
+                <section>
+                    <h2>App Manager</h2>
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+                    <br/>
+                    
+                    <p>
+                        <a href="https://developer.mozilla.org/en-US/Firefox_OS/Using_the_App_Manager">App Manager</a> comes built-in with Firefox 26.0+. App manager can be used to install <a href="https://ftp.mozilla.org/pub/mozilla.org/labs/fxos-simulator/">Firefox OS simulator</a> or to send apps to your device.
+                    </p>
+                    
+                </section>
+                <section>
+                    <h2>Simulator</h2>
+                    <br>
+                    <img src="files/fxos/simulator.png" height="413" />
+                    <br>
+                </section>
+                <section>
+                    <h2>Hello, World!</h2>
+                    <p>
+                        <br>
+                    </p>
+                    <p>It's time for a "Hello World" app, right now!</p>
+                    <p>
+                        <br>
+                    </p>
+                    <p>
+                        <br>
+                    </p>
+                </section>
+                <section>
+                    <h4>Step 1: Create a directory named <b>hello</b> </h4>
+                    <br>
+                    <br>Create a directory named <i>
+                        <b>hello</b>
+                    </i> anywhere in your computer.<br>
+                    <br>This will be the base directory - we put all files of our app here.<br>
+                </section>
+                <section>
+                    <h4>Step 2: Create file named <b>index.html</b> </h4>
+                    <br>
+                    <br>Create a file <i>index.html</i> (it doesn't need to be index.html, it could be any name with .html extention) in the <i>hello</i> directory.<br>
+                    <br>
+                    <img src="files/fxos/2c75d5d89c74e2db347aefd69d8d9632.png">
+                    <br>
+                </section>
+                <section>
+                    <h4>See it in your browser</h4>
+                    <br>Open the index.html file with your Firefox Browser. You can double-click or right-click then open with Firefox.<br>
+                </section>
+                <section>
+                    <img src="files/fxos/a89c15d727c672763e5b993af6a50cc3.png" height="495" width="558">
+                    <br>
+                    <br>
+                </section>
+                <section>But...doesn't look like a mobile app!<br>
+                    <br>Because, we've not taken care of screen size &amp; others.<br>
+                    <br>
+                    <h2>TIPS</h2>
+                    <br>To test mobile screens with various sizes, press <b>Control + Shift + M</b> in your Firefox!<br>
+                </section>
+                <section>
+                    <img src="files/fxos/14efccc9b6dee433ed82459d9d117ef2.png" height="368" width="346">
+                    <br>
+                    <br>Pressing <b>ctrl + shft + M</b> gives a mobile app look-&amp;-feel!<br>
+                </section>
 
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
 
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-        </section>
+                <section>
+                    <h4>Step 3: Create Manifest file</h4>
+                    <br>
+                    All Firefox OS apps need a <a href="https://developer.mozilla.org/en-US/docs/Apps/Manifest">manifest</a> file. The manifest file tells the app's name, description, permissions it requires and some other basic settings.
+                    <br>
+                    Manifest file can have any name, but it should have <I>.webapp</I> extension.
+                </section>
 
-        <footer>
-          Firefox os is maintained by <a href="https://github.com/yashthakkar">yashthakkar</a><br>
-          This page was generated by <a href="http://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.
-        </footer>
+                <section>Create manifest.webapp file in project directory <br>
+                    <br>We create <i>
+                        <b>manifest.webapp</b>
+                    </i> file (note the .webapp extention) in hello directory:<br>
+                    <img src="files/fxos/manifest.png">
+                    <br>
+                    <br>
+                </section>
+                <section>
+                    <h4>Install app in the simulator!</h4>
+                    <br />
+                    1. Open App Manager by typing <i>about:app-manager</i> in the address bar of browser
+                    <br>
+                    2. click <b>Start Simulator</b> &gt; <b>Firefox OS x.x</b> from the bottom bar
+                    <br>
 
+                    3. Click <i>Add Packaged App</i> &amp; select the folder which contains <i>manifest.webapp</i> file you just created. 
+
+                    <br />
+
+                    4. Click <b>update</b>
+
+                    <br>
+
+                    Bingo! Go to the simulator &amp; fine our app installed.
+                </section>
+                <section><h4>App in Firefox OS Simulator</h4>
+                    <br>
+                    <img src="files/fxos/3d2c6a116bb44d87e3b842efbae8c0da.png" height="391" width="235">
+                    <br>
+                </section>
+
+                <section>We've added a Batman Icon Too!<br>
+                    <br>
+                    <img src="files/fxos/batman.png" height="389" width="">
+                    <br>
+                </section>
+
+                <section>
+                    <h4>More Fun: Add some scripts</h4>
+                    <br>
+                    We will add a text input box and a button in our simple app. <br>
+                    When user clicks button, an alert box with the text in the input field will be shown.
+                </section>
+
+                <section>
+                    <h4> Change the <b>index.html</b> file 
+                        <br>to add the input elements </h4>
+                    <br>
+                    <img src="files/fxos/12.png">
+                </section>
+
+                <section>
+                    <h4>Create a file named <b>hello.js</b> 
+                        <br>inside your project directory</h4>
+                    <br>
+
+                    <pre><code>
+// Refer to UI elements
+var button = document.getElementById('myButton');
+var txtInput = document.getElementById('myTextInput');
+// Bind click event of the button with an event listener
+button.addEventListener('click', function(){
+    var text = txtInput.value;
+    // Show alert box with this text
+    alert(text);
+})
+                    </code></pre>
+
+                </section>
+
+                <section>
+                    Open <script type="text/javascript">printLogo()</script> Simulator and click <b>Update</b>
+                    <br>
+                    <img class='noStyle' src="files/fxos/nerds1.png"> 
+                    <img class='noStyle' src="files/fxos/nerds2.png">
+
+                </section>
+
+<!--                 <section>
+                    <h4></h4>
+                    <br>
+
+                </section> -->
+
+                <section>
+                    <h2>Congratulations!</h2>
+                    <br>
+                    You have created your first <script type="text/javascript">printLogo()</script> app!
+                </section>
+
+                <section>
+                    <h1>Tips &amp; Tricks</h1>
+                </section>
+
+                <section>
+                    <h4>Do we need to use the Simulator?</h4>
+                    <br>
+                    <p>
+                        Not really. You can test your app using the Firefox Browser. I can test all the functionalities almost, using the browser &amp; mobile view. So each time you update your app you can test by just refreshing the browser.
+                    </p>
+                </section>
+
+                <section>
+                    <h4>Using Frameworks</h4>
+                    <br>
+                    <p>
+                        To give your app a mobile application like look and feel, you can use many frameworks. 
+                        <br>
+                        <a href="http://jquerymobile.com/demos/1.2.0/">jQuery Mobile</a> is a cool framework, which turns your HTML stuffs into cool mobile app!
+                    </p>
+                    <br>
+                    Also handle mobile input events like tap, tap-&amp;-hold, swipe etc!
+                </section>
+
+                <section>
+                    <h4>Introducing jQuery Mobile</h4>
+                    <br>
+                    <img src="files/fxos/mines.png" align='left'>
+                    <br>
+                    Cool, right? learning jQuery Mobile is very easy! <br><br>
+                    See a video tutorial by Aniruddha on <a href='http://popcorn.webmadecontent.org/9wp'>building an app </a> in 6 minutes using jQuery Mobile - you won't regret this!
+                    <br><br>
+                    Also shows usage of <b>drag &amp; drop</b> interface to build UI!
+                </section>
+
+                <section>
+                    <h4>Handling different screen sizes</h4>
+                    <br>
+                    Mobile devices come with many different screen sizes - and your app should look alike in all of those regardless of the screen size. <br>
+                    <br>
+                    Address this issue by making your app <a href="http://google.com/search?q=responsive+design"><b>responsive</b></a>
+                </section>
+
+                <section>
+                    <h4>Responsive Frameworks</h4>
+                    <br>
+                    Instead of building a framework from scratch, using a framework that support responsive design would be good idea. <br><br>
+                    <img  src="files/fxos/response.jpeg"> <br>
+                    <b>Jquery Mobile</b> is responsive! <br>
+                    Many other responsive frameworks exist, of course.
+                </section>
+
+                <section>
+                    <h4>Building Blocks</h4>
+                    <br>
+                    Check out <a href="http://buildingfirefoxos.com">Building Blocks</a> to easily apply native look &amp; feel and UI elements, transitions etc. Many works are done already for your app!
+                </section>
+
+
+                <section>
+                    <h4>Publishing your app</h4>
+                    <br>
+                    Once you've completed your app, you need to upload it in a server, and share the link.
+                </section>
+
+                <section>
+                    <h4>Firefox Marketplace</h4>
+                    <br>
+                    <img src="files/fxos/market.png" align='left'>
+                    <br>
+                    You can submit your app in the <b>Firefox Marketplace</b> for more publicity!
+                    <br><br>
+                    Sign in to <a href='https://marketplace.firefox.com/developers/'>Marketplace Developer Hub</a> &amp; follow the instructions!
+                </section>
+
+                <section>
+                    <h1>Docs</h1>
+                </section>
+
+                <section>
+                    <h4>Mozilla Developer Network (MDN)</h4>
+                    <br>
+                    <a href="https://developer.mozilla.org/en-US/apps">MDN</a> Will be your one-stop center for docs. You may also check out:
+                    <br>
+                    <ul>
+                        <li><a href="https://developer.mozilla.org/en-US/docs/HTML/HTML5">HTML5</a></li>
+                        <li> <a href="https://developer.mozilla.org/en-US/docs/JavaScript">JavaScript</a></li>
+                        <li><a href="https://developer.mozilla.org/en-US/docs/CSS">CSS</a> Docs</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h1>Demos</h1>
+                </section>
+
+                <section>
+                    <h4>Apps Showdown</h4>
+                    <br>
+                    Need inspiration? See some cool apps in action in the <a href="https://developer.mozilla.org/en-US/demos/">Demo Studio</a>. You may also try the Marketplace from <script type="text/javascript">printLogo();</script> Simulator.
+                </section>
+
+                <section>
+                    <h2>Thank You</h2>
+                    <br>
+                    Author: <a href="http://shafiul.github.io">Shafiul Azam</a>
+                    <br><br><br>
+                    <h4>Contributors:</h4>
+                    &bullet; <a href="https://mozillians.org/en-US/u/rahid/">Rahid Hasan</a>
+                    &bullet; <a href="http://adhikary.net">Aniruddha Adhikary</a>
+                    &bullet; <a href="https://github.com/sayak-sarkar">Sayak Sarkar</a>
+                    &bullet; <a href="https://github.com/birajkarmakar">Biraj Karmakar</a>
+
+                    <br><br>
+                    This presentation can be viewed on-line from: <br>
+                    <a href="http://shafiul.github.com/slides">shafiul.github.com/slides</a>
+                </section>
+
+                <section>
+                    <h4></h4>
+                    <br>
+                </section>
+
+                <section>
+                    <h2>References</h2>
+                    <ol>
+                        <li>http://media.smashingmagazine.com/images/data-visualization/infosthetics02.jpg</li>
+                        <li>http://www.deltacad.com/sample/gears.gif</li>
+                        <li>http://www.websiteinabox.com/presscenter/images/dragon_thinking_small.gif</li>
+                        <li>http://www.iconspedia.com/icon/batman-icon-37891.html</li>
+                        <li>http://johnpolacek.github.com/scrolldeck.js/decks/responsive/img/responsive_web_design.png</li>
+                        <li>http://www.technobuffalo.com/wp-content/uploads/2013/02/firefox-os-phone-zte-630x420.jpg</li>
+                    </ol>
+                </section>
+
+            </div>
+
+
+
+
+        </div>
+
+        <script src="lib/js/head.min.js"></script>
         
-      </div>
-    </div>
-  </body>
+        <script src="js/reveal.min.js"></script>
+
+        <script>
+
+            // Full list of configuration options available here:
+            // https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                controls: true,
+                progress: true,
+                history: true,
+                center: true,
+
+                theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+                transition: Reveal.getQueryHash().transition || 'none', // default/cube/page/concave/zoom/linear/none
+
+                // Optional libraries used to extend on reveal.js
+                dependencies: [
+                    { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                    { src: 'plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                    { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+                    { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+                    // { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+                ]
+            });
+
+        </script>
+
+    </body>
 </html>
