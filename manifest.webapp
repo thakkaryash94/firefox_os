@@ -1,0 +1,10 @@
+{
+	"name": "Hello Firefox",
+	"description": "Firefox OS App",
+	"launch_path": "/index.html",
+	"developer": {
+		"name": "Yash Thakkar",
+		"url": "http://yashthakkar.com"
+	},
+	"default_locale": "en"
+}
